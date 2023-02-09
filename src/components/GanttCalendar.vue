@@ -41,7 +41,5 @@ const props = defineProps<{
   border-radius: 5px 0 0 5px;
   padding: 10px 5px 10px 10px;
   text-align: right;
-  text-overflow: ellipsis;
-  overflow-wrap: nowrap;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="room-name">
     {{ props.name }}
   </div>
 </template>
@@ -11,4 +11,9 @@ const props = defineProps<{
 </script>
 
 <style scoped lang="scss">
+#room-name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 </style>
