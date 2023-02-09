@@ -4,12 +4,11 @@
 
     <div id="time-and-room-container">
       <div id="sidebar">
-        <div style="height: 60px;"></div>
         <RoomName :name=roomName v-for="roomName in props.roomNames"/>
       </div>
   
       <div id="time-selection-container">
-        <TimeHeaderBar />
+        <TimeHeaderBar :start-hour="4"/>
         <TimeSelector />
       </div>
     </div>
@@ -35,11 +34,16 @@ const props = defineProps<{
   width: 100%;
   background-color: $color-background;
   border-radius: 5px;
+  min-width: 600px;
 }
 
 #time-and-room-container {
   display: flex;
   flex-direction: row;
+}
+
+#time-selection-container {
+  width: 100%;
 }
 
 #sidebar {
@@ -49,7 +53,7 @@ const props = defineProps<{
   max-width: 200px;
   background-color: $vt-c-black;
   border-radius: 5px 0 0 5px;
-  padding: 10px 5px 10px 10px;
+  padding: 20px 5px 10px 10px;
   text-align: right;
 }
 </style>
