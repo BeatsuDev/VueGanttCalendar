@@ -15,5 +15,6 @@ const props = defineProps<{
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  padding: 1px 0;
 }
 </style>

@@ -9,7 +9,7 @@
   
       <div id="time-selection-container">
         <TimeHeaderBar :start-hour="4"/>
-        <TimeSelector />
+        <TimeSelector :roomNames="roomNames"/>
       </div>
     </div>
   </div>
