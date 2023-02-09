@@ -1,5 +1,5 @@
 <template>
-    <div class="time-selector-row"></div>
+  <div class="time-selector-row"></div>
 </template>
 
 <script setup lang="ts">

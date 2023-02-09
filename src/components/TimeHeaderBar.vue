@@ -27,6 +27,7 @@ const hours = normalHours.slice(props.startHour).concat(normalHours.slice(0, pro
 
   .time-hour {
     width: calc(100% / 24);
+    text-align: center;
   }
 }
 </style>

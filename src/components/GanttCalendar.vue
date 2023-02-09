@@ -43,7 +43,7 @@ const props = defineProps<{
 }
 
 #time-selection-container {
-  width: 100%;
+  flex-grow: 1;
 }
 
 #sidebar {
