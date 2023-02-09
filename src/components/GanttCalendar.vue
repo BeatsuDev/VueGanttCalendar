@@ -1,12 +1,17 @@
 <template>
-  <div id="container">
-    <div id="sidebar">
-      <RoomName :name=roomName v-for="roomName in props.roomNames"/>
-    </div>
-    <div id="main">
-      <DateSelector />
-      <TimeHeaderBar />
-      <TimeSelector />
+  <div id="calendar-container">
+    <DateSelector />
+
+    <div id="time-and-room-container">
+      <div id="sidebar">
+        <div style="height: 60px;"></div>
+        <RoomName :name=roomName v-for="roomName in props.roomNames"/>
+      </div>
+  
+      <div id="time-selection-container">
+        <TimeHeaderBar />
+        <TimeSelector />
+      </div>
     </div>
   </div>
 </template>
@@ -23,13 +28,18 @@ const props = defineProps<{
 </script>
 
 <style scoped lang="scss">
-#container {
+#calendar-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   background-color: $color-background;
   border-radius: 5px;
+}
+
+#time-and-room-container {
+  display: flex;
+  flex-direction: row;
 }
 
 #sidebar {
