@@ -1,10 +1,6 @@
-@import './base.scss';
-
 #app {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 2rem;
-  background-color: $color-background;
-
-  font-weight: normal;
+  background-color: $vt-c-white;
 }
