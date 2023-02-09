@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import GanntCalendar from "./components/GanntCalendar.vue";
+import GanttCalendar from "./components/GanttCalendar.vue";
 </script>
 
 <template>
-  <GanntCalendar />
+  <GanttCalendar />
 </template>
 
 <style scoped>
